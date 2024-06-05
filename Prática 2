@@ -1,0 +1,29 @@
+package Auladia0506;
+
+import java.util.Scanner;
+
+public class pratica2 {
+
+	public static void main(String[] args) {
+    	Scanner ler = new Scanner(System.in);
+    int senha,senha2;
+    double n1,n2,soma;
+    System.out.print("Cadestre uma senha (Apenas números): ");
+    senha = ler.nextInt();
+    System.out.print("Digite um número: ");
+    n1 = ler.nextDouble();
+    System.out.print("Digite um número: ");
+    n2 = ler.nextDouble();
+    soma = n1 + n2;
+    
+    System.out.print("Digite a sua senha para desbloquear a soma: ");
+    senha2 = ler.nextInt();
+    if (senha2 == senha) {
+    	System.out.print("A soma é: "+soma);
+    }
+    if (senha2 != senha) {
+        System.out.println("Senha incorreta. A soma não pode ser desbloqueada.");
+    }
+	}
+
+}
